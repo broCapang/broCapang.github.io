@@ -5,13 +5,16 @@ tag: pwnable.tw
 ---
 
 
-## Analyze
+## Analysis
+
 Start by analyzing the binary
 
-file
+file check
+
 ```bash
 ./start: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, not stripped
 ```
+
 checksec
 ```bash
     Arch:     i386-32-little
@@ -20,20 +23,25 @@ checksec
     NX:       NX disabled
     PIE:      No PIE (0x8048000)
 ```
-Points got :-
+
+Key points got :
 1. 32 bit binary
 2. Intel 80386 architecture
 3. No protection at all
+
 Next we try running the code
+
 ```bash
 └─$ ./start
 Let's start the CTF:aaaaaaaaa
 ```
+
 ```
 └─$ ./start 
 Let's start the CTF:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 Segmentation fault
 ```
+
 Buffer overflow occur
 Lets check it in gdb
 
@@ -49,9 +57,11 @@ Non-debugging symbols:
 0x080490a4  _end
 pwndbg> 
 ```
+
 seems like not a ret2win chal
 so we check for every functions, and only function \_start we should analyze
-from gdb :-
+from gdb :
+
 ```bash
 pwndbg> disass _start
 Dump of assembler code for function _start:
@@ -79,7 +89,9 @@ Dump of assembler code for function _start:
    0x0804809c <+60>:	ret
 End of assembler dump.
 ```
+
 from ghidra :-
+
 ```C
 void processEntry entry(void)
 
@@ -93,6 +105,7 @@ void processEntry entry(void)
     return;
 }
 ```
+
 the code will
 	Line 01: Stores the esp value at this point on the stack.
 	Line 02: Stores the start address of \_exit.
@@ -119,6 +132,7 @@ the code will
 4. Overflow + ESP address + shellcode
 
 exploit.py
+
 ```python 3
 from pwn import *
 
