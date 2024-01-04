@@ -6,6 +6,7 @@ tag: tryhackme
 
 
 exploit.py
+
 ```python
 #!/usr/bin/env python3
 from pwn import *
@@ -63,6 +64,7 @@ io.sendline(payload)
 io.recvline()
 io.interactive()
 ```
+
 
 lesson learnt
 - check output using print(io.recvline())
