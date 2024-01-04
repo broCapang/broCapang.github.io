@@ -1,6 +1,6 @@
 # Personal Website
 
-![Watchers Badge](https://img.shields.io/github/watchers/[your-github-username]/[your-repo-name]?style=for-the-badge)
+![Watchers Badge](https://img.shields.io/github/watchers/broCapang/broCapang.github.io?style=for-the-badge)
 
 Built as a journey through TypeScript, Tailwind CSS, and Next.js, this website represents both a learning experience and a personal milestone.
 
