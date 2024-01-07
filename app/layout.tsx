@@ -2,6 +2,7 @@ import Link from "next/link";
 import "../styles/global.css";
 import { FaGithub } from 'react-icons/fa'; 
 import { VscAccount } from "react-icons/vsc";
+import Header from "../components/Header";
 
 export const metadata = {
   title: 'c4pang-ri6i10ns',
@@ -62,7 +63,7 @@ export default function RootLayout({
 
       <body className="bg-slate-800 px-6">
         <div className="mx-auto max-w-3xl text-white heigth">
-          {header}  
+          <Header />
           {children}
           {footer}
         </div>
