@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                         </svg>
                     </button>
                     <div className={`${isNavVisible ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-                        <ul className="flex flex-col md:flex-row md:space-x-8 p-4 mt-4 md:mt-0 ">
+                        <ul className="flex flex-col md:flex-row md:space-x-8 p-4 mt-4 md:mt-0 text-center">
                             <li><a href="/" className="py-2 px-3 text-gray-900 rounded hover:bg-gray-600 dark:text-white">Home</a></li>
                             <li><a href="/about" className="py-2 px-3 text-gray-900 rounded hover:bg-gray-600 dark:text-white">About</a></li>
                             <li><a href="/writeups" className="py-2 px-3 text-gray-900 rounded hover:bg-gray-600 dark:text-white">Writeups</a></li>
