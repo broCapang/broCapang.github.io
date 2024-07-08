@@ -26,7 +26,7 @@ const postPage = (props: any) => {
             <div className="my-12 text-center">
                 <h1 className="text-3xl text-white ">{post.data.title}</h1>
             </div>
-            <article className="prose dark:prose-invert w-full">
+            <article className="prose prose-invert w-full">
                 <Markdown>{post.content}</Markdown>
             </article>
         </div>

@@ -14,7 +14,8 @@ const HomePage = () => {
             <section className="my-8">
             <h2 className="text-2xl font-bold text-slate-200">About This Website</h2>
             <p className="text-slate-200 mt-4">
-                Built as a journey through TypeScript, Tailwind CSS, and Next.js, this website represents both a learning experience and a personal milestone.
+                This website is a collection of my writeups, portfolio, and contact information.
+
             </p>
             </section>
 
