@@ -63,7 +63,9 @@ The folder structure inside a .docx file looks like this:
 The focus now is in the `word` folder. Inside the `word/_rels/settings.xml.rels` file specifically manages relationships within the document. It maps parts of the document to external resources (e.g., images, links, macros, or OLE objects). `word/_rels/settings.xml.rels` is a critical file because it provides a map of how the document interacts with its environment.
 
 After extracting the `bubarparlimen.docx` file and going into the content of the file `word/_rels/settings.xml.rels` 
-![external template dotm](images/bubarparlimen/external-template-dotm.png)
+
+![external template dotm](/images/bubarparlimen/external-template-dotm.png)
+
 
 XML Explaination:
 **```
@@ -97,6 +99,7 @@ A `.dotm` file is a Microsoft Word Macro-Enabled Template file. It is used in Mi
 Looking into `RemoteLoad.dotm` file and going into Microsoft Script Editor shows that the macros are protected with a password.
 
 ![Password Protected VBA Macro](/images/bubarparlimen/password-protected-vba-macro.png)
+
 
 With **[olevba](https://github.com/decalage2/oletools/wiki/olevba)** , the VBA macro source code can be extracted. 
 

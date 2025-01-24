@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Bubar Parlimen [Malware Analysis] | Capang&#39;s Site</title>
+<title>Bubar Parlimen [Malware Analysis] | Irfan Haziq&#39;s Site</title>
 <meta name="keywords" content="Malware Analysis, MalDoc">
 <meta name="description" content="A bubarparlimen.docx file with an external RemoteLoad.dotm attached template file where it contains malicious VBA Macro which will write PE files, fetch .exe &#43; .dll file and executing it in the infected machine. The macro uses base64 encoding method and constructing the encoded string little by little to avoid suspicion.
 2. Case Details
@@ -157,7 +157,7 @@ bubarparlimen.docx is a .docx. To go further into the analysis, it is necessary 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Capang&#39;s Site (Alt + H)">Capang&#39;s Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Irfan Haziq&#39;s Site (Alt + H)">Irfan Haziq&#39;s Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -346,8 +346,8 @@ bubarparlimen.docx is a .docx. To go further into the analysis, it is necessary 
 </ul>
 <p><a href="https://medium.com/@stefan.sommarsjo/structure-of-docx-files-xml-schema-file-organization-and-common-errors-c74d841a65e7">reference</a></p>
 <p>The focus now is in the <code>word</code> folder. Inside the <code>word/_rels/settings.xml.rels</code> file specifically manages relationships within the document. It maps parts of the document to external resources (e.g., images, links, macros, or OLE objects). <code>word/_rels/settings.xml.rels</code> is a critical file because it provides a map of how the document interacts with its environment.</p>
-<p>After extracting the <code>bubarparlimen.docx</code> file and going into the content of the file <code>word/_rels/settings.xml.rels</code>
-<img alt="external template dotm" loading="lazy" src="images/bubarparlimen/external-template-dotm.png"></p>
+<p>After extracting the <code>bubarparlimen.docx</code> file and going into the content of the file <code>word/_rels/settings.xml.rels</code></p>
+<p><img alt="external template dotm" loading="lazy" src="/images/bubarparlimen/external-template-dotm.png"></p>
 <p>XML Explaination:
 **```</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>Type=&#34;http://schemas.openxmlformats.org/officeDocument/2006/relationships/attachedTemplate&#34;
@@ -834,7 +834,7 @@ End If
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Capang&#39;s Site</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Irfan Haziq&#39;s Site</a></span> · 
 
     <span>
         Powered by
