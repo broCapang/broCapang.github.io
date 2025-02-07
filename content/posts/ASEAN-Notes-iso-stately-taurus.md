@@ -1,23 +1,23 @@
 +++
-title = 'ASEAN Notes.iso Stately Taurus [Malware Analysis]'
+title = 'ASEAN Notes.iso Mustang Panda [Malware Analysis]'
 date = 2025-01-25T03:49:34+08:00
 draft = false
 tags = ["Malware Analysis","trojan", "dll-side-loading"]
 +++
 
-# Malware Analysis Report: ASEAN Notes.iso from Stately Taurus Campaign
+# Malware Analysis Report: ASEAN Notes.iso from Mustang Panda Campaign
 
 ```metadata
 Author: Capang
 Date: 24-01-2025
 Analysis Environment: Windows 10 VM
-Associated Campaign: Stately Taurus ASEAN Notes.iso  
+Associated Campaign: Mustang Panda ASEAN Notes.iso  
 Ref: https://csirt-cti.net/2024/01/23/stately-taurus-targets-myanmar/
 ```
 
 ## Executive Summary
 
-The ASEAN Notes.iso file is a component of a Stately Taurus campaign targeting entities in Myanmar. The attack leverages DLL sideloading via a hijacked Microsoft GetCurrentRollback.exe process (renamed office.exe) to execute the malicious GetCurrentDeploy.dll. The malware establishes persistence through registry modification and attempts C2 communication with fallback infrastructure. Primary objectives include initial access, persistence, and command execution, with suspected espionage motivations.
+The ASEAN Notes.iso file is a component of a Mustang Panda campaign targeting entities in Myanmar. The attack leverages DLL sideloading via a hijacked Microsoft GetCurrentRollback.exe process (renamed office.exe) to execute the malicious GetCurrentDeploy.dll. The malware establishes persistence through registry modification and attempts C2 communication with fallback infrastructure. Primary objectives include initial access, persistence, and command execution, with suspected espionage motivations.
 
 ## Case Details
 
@@ -85,7 +85,7 @@ The ASEAN Notes.iso file is a component of a Stately Taurus campaign targeting e
 
 ![image](/images/aseannotesiso/2.png)
 
-Associated with Stately Taurus targeting Myanmar
+Associated with Mustang Panda targeting Myanmar
 
 When mounting the ISO file, the victim is shown a set of `LNK` files or Shortcut and a folder with numerous structure named `_` 
 
