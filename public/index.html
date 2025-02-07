@@ -149,6 +149,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">pwnable.tw Dubblesort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This challenge leverages the behavior of the %s format specifier, which prints characters until it encounters a null terminator (\x00). By exploiting this property, it is possible to leak information about the libc base address. Additionally, the program contains an out-of-bounds (OOB) write operation; however, the writes are automatically sorted in ascending order.
+Initial Analysis File Analysis file dubblesort dubblesort: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, interpreter ./ld-2.23.so, for GNU/Linux 2.6.24, BuildID[sha1](/images/pwnabletw-dubblesort/)=12a217baf7cbdf2bb5c344ff14adcf7703672fb1, stripped file libc_32.so.6 libc_32.so.6: ELF 32-bit LSB shared object, Intel 80386, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1](/images/pwnabletw-dubblesort/)=d26149b8dc15c0c3ea8a5316583757f69b39e037, for GNU/Linux 2.6.32, stripped checksec --file ./dubblesort [*](/images/pwnabletw-dubblesort/) &#39;/home/capang/Desktop/CTF/pwnable.tw/dubblesort/dubblesort&#39; Arch: i386-32-little RELRO: Full RELRO Stack: Canary found NX: NX enabled PIE: PIE enabled RUNPATH: b&#39;.&#39; FORTIFY: Enabled Key Findings:-
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-08 00:45:26 +0800 +08'>February 8, 2025</span>&nbsp;·&nbsp;5 min</footer>
+  <a class="entry-link" aria-label="post link to pwnable.tw Dubblesort" href="http://localhost:1313/posts/pwnabletw-dubblesort/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">ASEAN Notes.iso Mustang Panda [Malware Analysis]
     </h2>
   </header>
@@ -214,20 +228,6 @@ Initial Analysis File Analysis Checking File type file fsb_overwrite fsb_overwri
   </div>
   <footer class="entry-footer"><span title='2025-01-23 10:27:11 +0800 +08'>January 23, 2025</span>&nbsp;·&nbsp;5 min</footer>
   <a class="entry-link" aria-label="post link to DreamHack Wargames Format String [PWN]" href="http://localhost:1313/posts/dh-format-string/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">IHack24 Morse Encoder [PWN]
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is the first challenge released during I-Hack 2024 Qualifier and I am so excited seeing the announcement of the challenge release. My adrenaline suddenly spike like crazy and more crazier I managed to get First Blood for this challenge
-Overview This challenge involves understanding of basic ROP and Shellcode Injection for ELF x86. The binary has no protection and the address of the input buffer were given. I would say a great challenge for beginners in PWN / Binary Exploitation
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-23 10:26:49 +0800 +08'>January 23, 2025</span>&nbsp;·&nbsp;5 min</footer>
-  <a class="entry-link" aria-label="post link to IHack24 Morse Encoder [PWN]" href="http://localhost:1313/posts/ihack-morse-encoder/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
