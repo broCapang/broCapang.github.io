@@ -129,6 +129,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">pwnable.tw Hacknote
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This challenge involves exploiting Use-After-Free vulnerability. The note structure in this challenge stores puts function pointer besides the note content pointer. By properly allocating and free-ing memory, full control on EIP will be achieved.
+Initial Analysis The challenge provide 2 files, hacknote (the challenge binary) and libc_32.so.6 (the libc used in this challenge)
+File Analysis file hacknote hacknote: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter ./ld-2.23.so, for GNU/Linux 2.6.32, BuildID[sha1]=a32de99816727a2ffa1fe5f4a324238b2d59a606, stripped file libc_32.so.6 libc_32.so.6: ELF 32-bit LSB shared object, Intel 80386, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1]=d26149b8dc15c0c3ea8a5316583757f69b39e037, for GNU/Linux 2.6.32, stripped Security Mitigations:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-13 17:20:36 +0800 +08'>February 13, 2025</span>&nbsp;·&nbsp;4 min</footer>
+  <a class="entry-link" aria-label="post link to pwnable.tw Hacknote" href="http://localhost:1313/posts/pwnabletw-hacknote/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">pwnable.tw Dubblesort
     </h2>
   </header>
@@ -194,20 +209,6 @@ Initial Recon Nmap nmap -sC -sV 10.10.13.181 -oA nmap/initial Starting Nmap 7.94
   </div>
   <footer class="entry-footer"><span title='2025-01-23 10:27:44 +0800 +08'>January 23, 2025</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Morpheus MCC23 [B2R]" href="http://localhost:1313/posts/thm-mcc23/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DreamHack Wargames Format String [PWN]
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is an easy level challenge introducing Format String Vulnerability. The method used to solve this challenge is leaking any function address and find the base address for the system. With the known base address, we can overwrite a global variable into wanted value.
-Initial Analysis File Analysis Checking File type file fsb_overwrite fsb_overwrite: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ecbb8000934a34b30ea8deb3a7675e08f8a44cda, for GNU/Linux 3.2.0, not stripped File type analysis
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-23 10:27:11 +0800 +08'>January 23, 2025</span>&nbsp;·&nbsp;5 min</footer>
-  <a class="entry-link" aria-label="post link to DreamHack Wargames Format String [PWN]" href="http://localhost:1313/posts/dh-format-string/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

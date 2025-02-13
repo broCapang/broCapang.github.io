@@ -6,27 +6,41 @@
     <description>Recent content in Tags on Irfan Haziq&#39;s Site</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2025 00:45:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2025 17:20:36 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heap-Exploit</title>
+      <link>http://localhost:1313/tags/heap-exploit/</link>
+      <pubDate>Thu, 13 Feb 2025 17:20:36 +0800</pubDate>
+      <guid>http://localhost:1313/tags/heap-exploit/</guid>
+      <description></description>
+    </item>
     <item>
       <title>OOB Write</title>
       <link>http://localhost:1313/tags/oob-write/</link>
-      <pubDate>Sat, 08 Feb 2025 00:45:26 +0800</pubDate>
+      <pubDate>Thu, 13 Feb 2025 17:20:36 +0800</pubDate>
       <guid>http://localhost:1313/tags/oob-write/</guid>
       <description></description>
     </item>
     <item>
       <title>PWN</title>
       <link>http://localhost:1313/tags/pwn/</link>
-      <pubDate>Sat, 08 Feb 2025 00:45:26 +0800</pubDate>
+      <pubDate>Thu, 13 Feb 2025 17:20:36 +0800</pubDate>
       <guid>http://localhost:1313/tags/pwn/</guid>
       <description></description>
     </item>
     <item>
       <title>Pwnable.tw</title>
       <link>http://localhost:1313/tags/pwnable.tw/</link>
-      <pubDate>Sat, 08 Feb 2025 00:45:26 +0800</pubDate>
+      <pubDate>Thu, 13 Feb 2025 17:20:36 +0800</pubDate>
       <guid>http://localhost:1313/tags/pwnable.tw/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Use-After-Free</title>
+      <link>http://localhost:1313/tags/use-after-free/</link>
+      <pubDate>Thu, 13 Feb 2025 17:20:36 +0800</pubDate>
+      <guid>http://localhost:1313/tags/use-after-free/</guid>
       <description></description>
     </item>
     <item>
